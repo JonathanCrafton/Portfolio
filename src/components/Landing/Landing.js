@@ -8,7 +8,7 @@ const Landing = () => {
     const classes = useStyles();
     return(
         <div>
-            <img src={background} alt="Background Image" />
+            <img src={background} alt="Background Image" width={1500}/>
             <h1 class={classes.centeredText}>Hello there!</h1>
         </div>
         
