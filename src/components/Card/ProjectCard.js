@@ -8,11 +8,14 @@ const ProjectCard = (props) => {
     //const {cardLink} = this.props;
     return(
         
-        <Card width={250}>
-            <img src={props.cardImage} width={250}/>
+        <Card width={500}>
+            <img src={props.cardImage} width={500}/>
             <Typography>{props.cardTitle}</Typography>
             <Typography>{props.cardDescription}</Typography>
-            <Button>View</Button>
+            <a href={props.link} target="_blank">
+                <Button>View</Button>
+            </a>
+            
         </Card>
         
     );
