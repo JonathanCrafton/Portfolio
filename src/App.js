@@ -4,7 +4,8 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Landing from './components/Landing/Landing';
 import Resume from './components/Resume/Resume';
-import Grid from '@material-ui/core';
+import Contact from './components/Contact/Contact';
+import Grid from '@material-ui/core/Grid';
 
 function App() {
   return (
@@ -12,10 +13,34 @@ function App() {
       <header className="App-header">
         <Navbar />
         <Landing/>
-        <div >
-          <About />
-        </div>
-        <Resume />
+        <Grid container spacing={2}>
+          <Grid item width="50%">
+            <div >
+            <About />
+            </div>
+          </Grid>
+          <Grid item width="50%">
+            <div>
+              Filler
+            </div>
+          </Grid>
+          <Grid item width="50%">
+            <div>
+              Filler
+            </div>
+          </Grid>
+          <Grid item width="50%">
+            <Contact />
+          </Grid>
+          <Grid item width="50%">
+            <div>
+              Filler
+            </div>
+          </Grid>
+          <Grid item width="50%">
+            <Resume />
+          </Grid>
+        </Grid>
       </header>
       <Footer />
     </div>

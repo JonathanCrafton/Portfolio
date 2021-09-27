@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
     return(
         
         <Card width={500}>
-            <img src={props.cardImage} width={500}/>
+            <img src={props.cardImage} width={1000}/>
             <Typography>{props.cardTitle}</Typography>
             <Typography>{props.cardDescription}</Typography>
             <a href={props.link} target="_blank">
